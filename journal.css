@@ -1,0 +1,47 @@
+.portrait-scene{height:710px}
+.portrait-footer{position:absolute;top:590px;left:5px;right:0;display:flex;align-items:center;gap:20px}
+.portrait-footer .portrait-stamp{position:static;flex:0 0 72px;width:72px;height:72px;transform:rotate(-9deg);font-size:9px}
+.portrait-footer .portrait-stamp b{font-size:12px}
+.portrait-footer .portrait-message{position:static;white-space:normal;font-size:10px;margin:0}
+.portrait-credit{bottom:8px}
+.portrait-halo{bottom:150px}
+.journal-cover{container-type:inline-size;display:flex;flex-direction:column;justify-content:space-between;padding:20px 22px;gap:12px}
+.post-card .journal-cover{height:255px}
+.cover-topline,.cover-bottomline{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-shrink:0;min-width:0}
+.cover-topline{font-size:8px;letter-spacing:.13em;color:#785947}
+.cover-bottomline{font-size:8px;color:#785947;border-top:1px solid #80624730;padding-top:11px;line-height:1.4}
+.cover-bottomline b{font-weight:400;font-size:11px;letter-spacing:-.04em}
+.cover-bottomline>span{font-size:6px;letter-spacing:.08em;white-space:nowrap}
+.cover-game{background:#efe5d4}
+.choice-scene{display:grid;grid-template-columns:minmax(0,1fr) 25px minmax(0,1fr);align-items:center;gap:7px;flex:1;min-height:0;padding:4px 6px}
+.choice-card{min-width:0;height:100%;max-height:164px;background:#fffaf0;border:1px solid #ddc6b0;border-radius:9px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-5deg);box-shadow:0 6px 12px #7c4e3010}
+.choice-card:last-child{background:#cf8b66;color:#fff9f0;border-color:#c1805e;transform:rotate(5deg)}
+.choice-card>span{font:8px Georgia,serif;letter-spacing:.09em}
+.choice-card>i{font-style:normal;font-size:30px;line-height:1;color:#af6540}.choice-card:last-child>i{color:#fff0d4}
+.choice-card>b{font-size:clamp(12px,5.3cqw,22px);line-height:1.35;white-space:nowrap;letter-spacing:-.05em}
+.choice-scene>em{font:italic 18px Georgia,serif;text-align:center;color:#97694e}
+.cover-letters{background:#eadfdf}
+.letters-scene{position:relative;flex:1;min-height:0;display:flex;justify-content:center;align-items:center;padding:6px 18px}
+.love-note{position:relative;width:47%;height:90%;max-height:170px;padding:13px;background:#fff8eb;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 5px 12px #66453514;transform:rotate(-10deg);border:1px solid #d9c5b6}
+.note-right{background:#d1d8bc;transform:rotate(10deg);margin-left:-4px;margin-top:10px;border-color:#b8c19e}
+.love-note>span{font:italic 13px Georgia,serif;color:#85684f}
+.love-note>b{font-size:clamp(12px,5cqw,21px);line-height:1.45;letter-spacing:-.04em;white-space:nowrap;color:#584a3e}
+.love-note>i{font-style:normal;font-size:21px;line-height:1;color:#a8674d;align-self:end}
+.letter-seal{position:absolute;left:50%;bottom:4px;transform:translateX(-50%) rotate(-12deg);width:39px;height:39px;border-radius:50%;border:3px double #da997b;background:#a6593c;color:#fff3dc;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font:italic 10px/1 Georgia,serif;box-shadow:0 3px 6px #74442822}
+.cover-video{background:#34463d;color:#fff9e9;gap:9px}
+.cover-video .cover-topline{color:#e4dcc9}.cover-video .cover-topline>span:last-child{color:#efb08c;font-size:7px}
+.video-duo{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:5px;flex:1;min-height:0;overflow:hidden;border-radius:7px}
+.video-duo>div{position:relative;min-width:0;overflow:hidden;background:#737d69}
+.video-duo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.video-duo>div:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 50%,#18241dcc)}
+.video-duo>div>span{position:absolute;z-index:1;bottom:8px;left:10px;font-size:9px;color:#fff7e7}
+.video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:37px;height:37px;border:1px solid #fff9;border-radius:50%;background:#faf8ed35;backdrop-filter:blur(3px);display:grid;place-items:center;padding-left:2px;color:white;font:12px Arial;z-index:2}
+.video-timeline{display:flex;align-items:center;gap:8px;font:7px Arial;letter-spacing:.02em;color:#e8e6d8}
+.video-timeline>i{position:relative;flex:1;height:3px;background:#819183;border-radius:2px}
+.video-timeline>i:before{content:'';position:absolute;inset:0 47% 0 0;background:#e4c092;border-radius:2px}
+.video-timeline>i:after{content:'';position:absolute;top:-2px;left:53%;width:7px;height:7px;background:#fff8ec;border-radius:50%}
+.cover-video .cover-bottomline{color:#f2e9d5;border-color:#b7c0af40;padding-top:9px}
+.article>.journal-cover{height:360px;padding:28px 38px}.article .choice-card,.article .love-note{max-height:220px}.article .choice-card>b,.article .love-note>b{font-size:26px}.article .cover-bottomline b{font-size:15px}
+@media(max-width:1100px){.portrait-scene{height:650px}.portrait-footer{top:535px}.portrait-footer .portrait-message{font-size:9px}.journal-cover{padding:17px;gap:10px}.cover-topline{font-size:7px}.cover-bottomline b{font-size:10px}.choice-card{padding:10px}}
+@media(max-width:760px){.portrait-scene{height:655px}.portrait-footer{top:535px;left:0;gap:12px}.portrait-footer .portrait-stamp{width:65px;height:65px;flex-basis:65px}.portrait-footer .portrait-message{font-size:9px}.portrait-halo{bottom:145px}.post-card{display:block}.post-card .journal-cover{height:auto;aspect-ratio:1.48;padding:22px 24px;border-radius:17px;gap:12px}.post-card .post-info{padding:19px 2px 0}.post-info p{display:block}.post-info h3{font-size:21px}.cover-topline{font-size:8px}.cover-bottomline b{font-size:11px}.choice-card{padding:12px;max-height:none}.love-note{max-height:none}.video-duo>div>span{font-size:10px}.article>.journal-cover{padding:22px;height:310px}.article .choice-card>b,.article .love-note>b{font-size:22px}.article .cover-bottomline b{font-size:12px}}
+@media(max-width:390px){.portrait-scene{height:585px}.portrait-footer{top:465px}.portrait-footer .portrait-stamp{flex-basis:60px;width:60px;height:60px}.portrait-footer .portrait-message{font-size:8px;padding:9px}.post-card .journal-cover{padding:17px;gap:9px}.cover-topline{font-size:7px}.cover-bottomline b{font-size:10px}.choice-card{padding:9px}.choice-card>i{font-size:23px}.love-note{padding:9px}.love-note>span{font-size:11px}}
